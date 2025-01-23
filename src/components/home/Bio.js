@@ -20,7 +20,7 @@ const Bio = () => {
             className="img-fluid rounded-circle bio-image mb-3"
           />
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8" style={{ maxWidth: "500px" }}>
           <h2 className="font-weight-bold">
             Software Developer <br />
             && <br />
@@ -32,7 +32,10 @@ const Bio = () => {
             J'aide les entreprises à obtenir 20 fois plus de prospects avec des
             sites web rapides, beaux et conçus de manière unique.
           </p>
-          <div className="d-flex justify-content-around mt-4">
+          <div
+            className="container d-flex justify-content-around mt-4"
+            style={{ maxWidth: "300px" }}
+          >
             <Button variant="primary" className="mr-2">
               <Link to="/contact" className="text-white text-decoration-none">
                 Contactez-moi

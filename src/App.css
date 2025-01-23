@@ -187,6 +187,12 @@
 .bio-links a:hover {
   color: #007bff; /* Change to desired hover color */
 }
+.next-footer {
+  height: 450px;
+  background-color: #13f80b;
+  width: 100%;
+  padding-bottom: 550px;
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -195,8 +201,8 @@
   }
 
   .bio-image {
-    min-width: 200px;
-    margin: auto;
+    width: 120px;
+    height: 120px;
   }
 
   .bio-text {
@@ -224,10 +230,4 @@
   .bio-links a {
     font-size: 1.2rem;
   }
-}
-.next-footer {
-  height: 450px;
-  background-color: #13f80b;
-  width: 100%;
-  padding-bottom: 550px;
 }
