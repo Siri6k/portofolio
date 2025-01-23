@@ -3,7 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const NavigationBar = () => (
-  <Navbar bg="dark" variant="dark" expand="lg">
+  <Navbar bg="dark" variant="dark" expand="lg" className="fixed-top">
     <Navbar.Brand as={Link} to="/">
       Adamchrisk.
     </Navbar.Brand>
