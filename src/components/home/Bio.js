@@ -38,7 +38,7 @@ const Bio = () => {
                 Contactez-moi
               </Link>
             </Button>
-            <Button variant="secondary">
+            <Button variant="secondary" disabled>
               <a
                 href="path/to/your-cv.pdf"
                 target="_blank"
