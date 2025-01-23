@@ -7,11 +7,10 @@ import {
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
-import "../styles/ContactLinks.css"; // Importer le fichier CSS pour les animations
 
 const ContactLinks = () => {
   return (
-    <Container className="text-center my-4">
+    <Container className="text-center my-4 mt-2">
       <h2>Contactez-moi</h2>
       <Row className="justify-content-center">
         <Col xs={2}>
@@ -21,7 +20,7 @@ const ContactLinks = () => {
             target="_blank"
             className="animated-button"
           >
-            <FaWhatsapp size={30} className="custom-icon" />
+            <FaWhatsapp size={20} className="custom-icon" />
           </Button>
         </Col>
         <Col xs={2}>
@@ -31,7 +30,7 @@ const ContactLinks = () => {
             target="_blank"
             className="animated-button"
           >
-            <FaTelegram size={30} className="custom-icon" />
+            <FaTelegram size={20} className="custom-icon" />
           </Button>
         </Col>
         <Col xs={2}>
@@ -41,7 +40,7 @@ const ContactLinks = () => {
             target="_blank"
             className="animated-button"
           >
-            <FaEnvelope size={30} className="custom-icon" />
+            <FaEnvelope size={20} className="custom-icon" />
           </Button>
         </Col>
         <Col xs={2}>
@@ -51,7 +50,7 @@ const ContactLinks = () => {
             target="_blank"
             className="animated-button"
           >
-            <FaLinkedin size={30} className="custom-icon" />
+            <FaLinkedin size={20} className="custom-icon" />
           </Button>
         </Col>
         <Col xs={2}>
@@ -61,7 +60,7 @@ const ContactLinks = () => {
             target="_blank"
             className="animated-button"
           >
-            <FaGithub size={30} className="custom-icon" />
+            <FaGithub size={20} className="custom-icon" />
           </Button>
         </Col>
       </Row>

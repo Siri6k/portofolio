@@ -1,23 +1,46 @@
 import React from "react";
-import NavigationBar from "./components/Navbar";
-import ProjectCarousel from "./components/Projects";
-import ContactForm from "./components/ContactForm";
-import ContactLinks from "./components/ContactLinks";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NavigationBar from "./components/common/header/Navbar";
+import ProjectList from "./components/home/Projects";
+import ContactForm from "./components/home/ContactForm";
+import ContactLinks from "./components/home/ContactLinks";
+import Bio from "./components/home/Bio";
+import Contact from "./components/home/Contact";
 
 function App() {
   return (
-    <div className="App">
-      <NavigationBar />
-      <div id="home">
-        <ProjectCarousel />
+    <Router>
+      <div className="App">
+        <NavigationBar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <div
+                  id="home"
+                  className="container text-center mt-2"
+                  style={{ width: "80vw", alignContent: "center" }}
+                >
+                  <Bio />
+                </div>
+                <div id="projects">
+                  <h2 className="text-center my-4">Mes Projets</h2>
+                  <ProjectList />
+                </div>
+                <ContactLinks />
+              </>
+            }
+          />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <div className="footer fixed-bottom">
+          <p className="text-center bg-dark text-white py-3 my-0">
+            <span>© Created by Niplan & Sirisk dev</span>
+          </p>
+        </div>
       </div>
-      <div id="projects">
-        <h2 className="text-center my-4">Mes Projets</h2>
-        {/* Ajoutez ici vos projets */}
-      </div>
-      <ContactForm />
-      <ContactLinks />
-    </div>
+    </Router>
   );
 }
 

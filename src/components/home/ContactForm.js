@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { Form, Button, Container } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Form, Button, Container } from "react-bootstrap";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -23,7 +23,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container id="contact">
+    <Container id="contact" className="mt-2">
       <h2>Contactez-moi</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formName">
