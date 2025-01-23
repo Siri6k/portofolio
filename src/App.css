@@ -225,3 +225,9 @@
     font-size: 1.2rem;
   }
 }
+.bottom-padding {
+  padding-bottom: 60px; /* Adjust this value as needed */
+}
+a {
+  color: white;
+}

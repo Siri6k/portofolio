@@ -10,7 +10,10 @@ import {
 
 const ContactLinks = () => {
   return (
-    <Container className="text-center my-4 mt-2">
+    <Container
+      className="bottom-padding text-center my-4 "
+      style={{ padding: "2px auto 10px" }}
+    >
       <h2>Contactez-moi</h2>
       <Row className="justify-content-center">
         <Col xs={2}>

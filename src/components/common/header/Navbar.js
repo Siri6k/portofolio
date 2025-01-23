@@ -1,9 +1,12 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => (
   <Navbar bg="dark" variant="dark" expand="lg">
-    <Navbar.Brand href="#home">Adamchrisk</Navbar.Brand>
+    <Navbar.Brand as={Link} to="/">
+      Adamchrisk.
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">

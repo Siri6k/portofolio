@@ -6,6 +6,7 @@ import ContactForm from "./components/home/ContactForm";
 import ContactLinks from "./components/home/ContactLinks";
 import Bio from "./components/home/Bio";
 import Contact from "./components/home/Contact";
+import Footer from "./components/common/footer";
 
 function App() {
   return (
@@ -34,11 +35,7 @@ function App() {
           />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <div className="footer fixed-bottom">
-          <p className="text-center bg-dark text-white py-3 my-0">
-            <span>© Created by Niplan & Sirisk dev</span>
-          </p>
-        </div>
+        <Footer />
       </div>
     </Router>
   );
