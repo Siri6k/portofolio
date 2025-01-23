@@ -20,16 +20,23 @@ function App() {
               <>
                 <div
                   id="home"
-                  className="container text-center mt-2"
-                  style={{ width: "80vw", alignContent: "center" }}
+                  className="container text-center mt-5"
+                  style={{ maxWidth: "500px", alignContent: "center" }}
                 >
                   <Bio />
                 </div>
-                <div id="projects">
+                <div
+                  id="projects"
+                  className="container"
+                  style={{ maxWidth: "1200px" }}
+                >
                   <h2 className="text-center my-4">Mes Projets</h2>
                   <ProjectList />
                 </div>
                 <ContactLinks />
+                <div className="container-fluid next-footer mt-5">
+                  <p className="next-footer"></p>
+                </div>
               </>
             }
           />

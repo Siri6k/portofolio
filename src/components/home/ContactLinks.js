@@ -10,10 +10,7 @@ import {
 
 const ContactLinks = () => {
   return (
-    <Container
-      className="bottom-padding text-center my-4 "
-      style={{ padding: "2px auto 10px" }}
-    >
+    <Container className="text-center my-4 ">
       <h2>Contactez-moi</h2>
       <Row className="justify-content-center">
         <Col xs={2}>
@@ -67,6 +64,7 @@ const ContactLinks = () => {
           </Button>
         </Col>
       </Row>
+     
     </Container>
   );
 };

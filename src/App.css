@@ -195,8 +195,8 @@
   }
 
   .bio-image {
-    width: 120px;
-    height: 120px;
+    min-width: 200px;
+    margin: auto;
   }
 
   .bio-text {
@@ -225,9 +225,9 @@
     font-size: 1.2rem;
   }
 }
-.bottom-padding {
-  padding-bottom: 60px; /* Adjust this value as needed */
-}
-a {
-  color: white;
+.next-footer {
+  height: 450px;
+  background-color: #13f80b;
+  width: 100%;
+  padding-bottom: 550px;
 }
