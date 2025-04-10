@@ -16,7 +16,7 @@ const ContactLinks = () => {
         <Col xs={2}>
           <Button
             variant="success"
-            href="https://wa.me/1234567890"
+            href="https://wa.me/+243994126699"
             target="_blank"
             className="animated-button"
           >
@@ -26,7 +26,7 @@ const ContactLinks = () => {
         <Col xs={2}>
           <Button
             variant="primary"
-            href="https://t.me/username"
+            href="https://t.me/Adamchrisk"
             target="_blank"
             className="animated-button"
           >
@@ -36,7 +36,7 @@ const ContactLinks = () => {
         <Col xs={2}>
           <Button
             variant="danger"
-            href="mailto:email@example.com"
+            href="mailto:adamchrisk@gmail.com"
             target="_blank"
             className="animated-button"
           >
@@ -46,7 +46,7 @@ const ContactLinks = () => {
         <Col xs={2}>
           <Button
             variant="info"
-            href="https://www.linkedin.com/in/username"
+            href="https://www.linkedin.com/in/adam-chris-kayungura-0502a398/"
             target="_blank"
             className="animated-button"
           >
@@ -56,7 +56,7 @@ const ContactLinks = () => {
         <Col xs={2}>
           <Button
             variant="dark"
-            href="https://github.com/username"
+            href="https://github.com/siri6k"
             target="_blank"
             className="animated-button"
           >

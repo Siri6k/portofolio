@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="container-fluid text-center mt-5">
+    <div className="container-fluid text-center">
       <div className="container d-flex flex-column align-items-center justify-content-center bg-light">
         <h2>Say Hello 👋</h2>
         <p>Let's Work Together.</p>
