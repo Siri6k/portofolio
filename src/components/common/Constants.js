@@ -30,11 +30,11 @@ export const myProjects = [
   },
   {
     key: "4",
-    title: "Amazon clone project",
+    title: "Amazon Inventory project",
     content:
-      "Amazon clone project using React, Redux, Django, SQL, and AWS S3.",
+      "Amazon inventory clone project using React, Redux, Django, SQL, and AWS S3.",
     image: amznClone,
-    link: "http://ec2-13-233-173-206.ap-south-1.compute.amazonaws.com/",
+    link: "https://niplan-market.onrender.com/",
   },
 
   {
