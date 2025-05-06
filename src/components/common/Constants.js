@@ -8,33 +8,33 @@ import ethScan from "../../assets/eth-scan.png";
 export const myProjects = [
   {
     key: "1",
+    title: "Amazon Inventory project",
+    content:
+      "Amazon inventory clone project using React, Redux, Django, SQL, and AWS S3.",
+    image: amznClone,
+    link: "https://niplan-market.onrender.com/",
+  },
+  {
+    key: "2",
     title: "Ethereum scan project",
     content: "Ethereum scan project using React and alchemy API.",
     image: ethScan,
     link: "https://blockexplorer-clone.vercel.app/",
   },
   {
-    key: "2",
+    key: "3",
     title: "A drum machine project",
     content: "A dummy project of a drum machine with freeCodeCamp.",
     image: drumMachineImage,
     link: "https://fcc-drum-machine-nu.vercel.app/",
   },
   {
-    key: "3",
+    key: "4",
     title: "A markdown previewer project",
     content:
       "A dummy project of mark down previewer that transform some text in html page with freeCodeCamp.",
     image: markdownImage,
     link: "https://fcc-markdown-b7mj.vercel.app/",
-  },
-  {
-    key: "4",
-    title: "Amazon Inventory project",
-    content:
-      "Amazon inventory clone project using React, Redux, Django, SQL, and AWS S3.",
-    image: amznClone,
-    link: "https://niplan-market.onrender.com/",
   },
 
   {
