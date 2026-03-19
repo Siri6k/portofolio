@@ -1,0 +1,124 @@
+/* src/styles/theme.css - Design System from UI/UX Pro Max */
+:root {
+  /* Colors */
+  --color-primary: #0B132B; /* Bleu Nuit - Contraste fort pour texte */
+  --color-secondary: #D4AF37; /* Or métallique */
+  --color-accent: #10B981; /* Vert WhatsApp */
+  --color-bg: #F8FAFC; /* Gris très clair, évite le blanc pur agressif */
+  --color-text: #1E293B; /* Slate 800 - Lisibilité WCAG */
+  --color-text-light: #64748B; /* Slate 500 */
+  --color-border: #E2E8F0; /* Slate 200 */
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing (8dp Rhythm) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  /* Interaction Targets */
+  --target-min-size: 44px;
+
+  /* Borders & Shadows */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-glass: 0 8px 32px 0 rgba(11, 19, 43, 0.05);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: var(--space-3); }
+h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: var(--space-2); }
+h3 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: var(--space-2); }
+
+p {
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-3);
+  font-size: 1rem;
+}
+
+/* Base interactive elements */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+button, .btn {
+  min-height: var(--target-min-size); /* Accessibilité tactile */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  font-family: var(--font-body);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary-custom {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--space-2) var(--space-4);
+  border: 2px solid var(--color-primary);
+}
+.btn-primary-custom:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.btn-gold {
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: var(--space-2) var(--space-4);
+  border: none;
+  box-shadow: var(--shadow-md);
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(212, 175, 55, 0.3);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-glass);
+  padding: var(--space-4);
+}
+
+/* Accessibility Focus States */
+*:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
