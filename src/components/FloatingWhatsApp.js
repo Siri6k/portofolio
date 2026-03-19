@@ -5,7 +5,7 @@ import './FloatingWhatsApp.css';
 const FloatingWhatsApp = () => {
   return (
     <a 
-      href="https://wa.me/243810000000" // Remplacer par le vrai numéro
+      href="https://wa.me/243899530506" 
       className="whatsapp-float d-flex justify-content-center align-items-center"
       target="_blank"
       rel="noopener noreferrer"

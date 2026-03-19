@@ -3,12 +3,12 @@ import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
-const Navigation = ({ theme, toggleTheme }) => {
+const Navigation = ({ theme }) => {
   return (
     <Navbar expand="lg" variant={theme === 'dark' ? 'dark' : 'light'} style={{ backgroundColor: 'var(--color-surface)', padding: 'var(--space-2) 0', borderBottom: '1px solid var(--color-border)' }} sticky="top">
       <Container>
         <Navbar.Brand as={NavLink} to="/" style={{ fontFamily: 'var(--font-heading)', fontWeight: 'bold', color: 'var(--color-text)' }}>
-          ADC. <span style={{ color: 'var(--color-secondary)' }}>Pro</span>
+          Niplan. <span style={{ color: 'var(--color-secondary)' }}>Pro</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -17,10 +17,7 @@ const Navigation = ({ theme, toggleTheme }) => {
             <Nav.Link as={NavLink} to="/services" style={{ color: 'var(--color-text)' }}>Services</Nav.Link>
             <Nav.Link as={NavLink} to="/portfolio" style={{ color: 'var(--color-text)' }}>Réalisations</Nav.Link>
             <Nav.Link as={NavLink} to="/about" style={{ color: 'var(--color-text)' }}>À Propos</Nav.Link>
-            <Button variant="link" onClick={toggleTheme} style={{ color: 'var(--color-text)', border: '1px solid var(--color-border)', borderRadius: '50%', padding: '8px' }}>
-              {theme === 'light' ? <FaMoon size={18} /> : <FaSun size={18} />}
-            </Button>
-            <Nav.Link as={NavLink} to="/contact" className="btn-premium ms-lg-2">Devis & Rendez-vous</Nav.Link>
+            <Nav.Link as={NavLink} to="/contact" className="btn-premium ms-lg-2">Devis & Projet</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

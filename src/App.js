@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import ThemeToggle from "./components/ThemeToggle";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
@@ -22,7 +23,8 @@ function App() {
   return (
     <Router>
       <div className="d-flex flex-column min-vh-100">
-        <Navigation theme={theme} toggleTheme={toggleTheme} />
+        <Navigation theme={theme} />
+        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
         <FloatingWhatsApp />
         <main className="flex-grow-1">
           <Routes>

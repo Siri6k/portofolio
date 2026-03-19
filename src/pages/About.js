@@ -10,7 +10,7 @@ const About = () => {
           <Col md={6}>
             <h1 className="fw-bold mb-4">L'Intelligence Digitale au service des <span style={{ color: 'var(--color-secondary)' }}>PME Congolaises</span></h1>
             <p className="lead mb-4" style={{ color: 'var(--color-text-muted)' }}>
-              Je suis Adam Chris Kayungura, fondateur de l'Agence Digitale Congo (ADC). 
+              Je suis Adam Chris Kayungura, fondateur de Niplan. Pro. 
               Ma mission est de démocratiser l'accès à des technologies web premium pour les entreprises de la RDC.
             </p>
             <p style={{ color: 'var(--color-text)' }}>

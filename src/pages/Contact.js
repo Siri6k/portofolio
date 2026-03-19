@@ -58,24 +58,24 @@ const Contact = () => {
             </div>
           </Col>
 
-          {/* Calendly / Infos Supplémentaires */}
+          {/* WhatsApp Direct / Infos Supplémentaires */}
           <Col md={6}>
             <div className="h-100 d-flex flex-column justify-content-center p-5 rounded-4 shadow-md" style={{ backgroundColor: 'var(--color-surface)', border: '1px solid var(--color-border)' }}>
-              <h3 className="fw-bold mb-4" style={{ color: 'var(--color-secondary)' }}>Plus rapide de vive voix ?</h3>
+              <h3 className="fw-bold mb-4" style={{ color: 'var(--color-secondary)' }}>Réponse Ultra Rapide ⚡</h3>
               <p className="mb-4" style={{ fontSize: '1.1rem', color: 'var(--color-text-muted)' }}>
-                Si vous avez une idée précise en tête et que vous souhaitez en discuter rapidement, réservez directement un appel découverte (gratuit de 15 min).
+                Pour une réponse immédiate, contactez-moi directement sur WhatsApp. Idéal pour poser vos questions ou envoyer un mémo vocal sur votre projet.
               </p>
               
               <div className="p-4 rounded-3 text-center mb-4 border" style={{ backgroundColor: 'var(--color-bg)', borderColor: 'var(--color-border)' }}>
-                <p className="fw-bold mb-3" style={{ color: 'var(--color-text)' }}>📍 Choisissez votre créneau via Calendly</p>
-                <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary-custom fw-bold w-100 mb-2">
-                  Ouvrir l'agenda Calendly
+                <p className="fw-bold mb-3" style={{ color: 'var(--color-text)' }}>🚀 Démarrer la discussion</p>
+                <a href="https://wa.me/243899530506" target="_blank" rel="noopener noreferrer" className="btn btn-premium fw-bold w-100 mb-2">
+                  Ouvrir WhatsApp
                 </a>
               </div>
 
               <div>
-                <p className="mb-2" style={{ color: 'var(--color-text)' }}>📱 <strong>WhatsApp:</strong> +243 81 00 00 000</p>
-                <p className="mb-0" style={{ color: 'var(--color-text)' }}>📧 <strong>Email:</strong> contact@adc-pro.cd</p>
+                <p className="mb-2" style={{ color: 'var(--color-text)' }}>📱 <strong>WhatsApp:</strong> +243 89 95 30 506</p>
+                <p className="mb-0" style={{ color: 'var(--color-text)' }}>📧 <strong>Email:</strong> adamchrisk@gmail.com</p>
               </div>
             </div>
           </Col>
