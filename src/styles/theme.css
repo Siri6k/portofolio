@@ -1,36 +1,36 @@
-/* src/styles/theme.css - Design System from UI/UX Pro Max */
-:root {
-  /* Colors */
-  --color-primary: #0B132B; /* Bleu Nuit - Contraste fort pour texte */
-  --color-secondary: #D4AF37; /* Or métallique */
-  --color-accent: #10B981; /* Vert WhatsApp */
-  --color-bg: #F8FAFC; /* Gris très clair, évite le blanc pur agressif */
-  --color-text: #1E293B; /* Slate 800 - Lisibilité WCAG */
-  --color-text-light: #64748B; /* Slate 500 */
-  --color-border: #E2E8F0; /* Slate 200 */
-
-  /* Typography */
-  --font-heading: 'Outfit', sans-serif;
-  --font-body: 'Inter', sans-serif;
-
-  /* Spacing (8dp Rhythm) */
-  --space-1: 8px;
-  --space-2: 16px;
-  --space-3: 24px;
-  --space-4: 32px;
-  --space-5: 48px;
-  --space-6: 64px;
-
-  /* Interaction Targets */
-  --target-min-size: 44px;
-
-  /* Borders & Shadows */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+/* src/styles/theme.css - Design System from UI/UX Pro Max (Premium Indigo/Cyan) */
+:root, :root[data-theme="light"] {
+  --color-bg: #FFFFFF;
+  --color-surface: #F8FAFC;
+  --color-text: #0F172A;
+  --color-text-muted: #64748B;
+  --color-primary: #1E293B; /* Navy foncé */
+  --color-secondary: #4F46E5; /* Indigo Premium */
+  --color-accent: #0EA5E9; /* Cyan Électrique */
+  --color-border: #E2E8F0;
+  
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-glass: 0 8px 32px 0 rgba(11, 19, 43, 0.05);
+  --shadow-glass: 0 8px 32px 0 rgba(30, 41, 59, 0.05);
+  
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --space-1: 8px; --space-2: 16px; --space-3: 24px; --space-4: 32px; --space-5: 48px; --space-6: 64px;
+  --target-min-size: 44px;
+  --radius-sm: 8px; --radius-md: 12px; --radius-lg: 16px;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #020617; /* Slate 950 */
+  --color-surface: #0F172A; /* Slate 900 */
+  --color-text: #F8FAFC; /* Blanc cassé */
+  --color-text-muted: #94A3B8;
+  --color-primary: #FFFFFF; /* Blanc pour les titres en dark */
+  --color-secondary: #6366F1; /* Indigo clair */
+  --color-accent: #38BDF8; /* Cyan clair */
+  --color-border: #1E293B;
+  
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -40,6 +40,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,24 +56,23 @@ h3 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: var(--space-2); }
 
 p {
   line-height: 1.6;
-  color: var(--color-text-light);
+  color: var(--color-text-muted);
   margin-bottom: var(--space-3);
   font-size: 1rem;
 }
 
-/* Base interactive elements */
 a {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 a:hover {
-  color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 button, .btn {
-  min-height: var(--target-min-size); /* Accessibilité tactile */
+  min-height: var(--target-min-size);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -85,40 +85,38 @@ button, .btn {
 }
 
 .btn-primary-custom {
-  background-color: var(--color-primary);
-  color: white;
+  background-color: var(--color-surface);
+  color: var(--color-text);
   padding: var(--space-2) var(--space-4);
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-border);
 }
 .btn-primary-custom:hover {
-  background-color: transparent;
-  color: var(--color-primary);
+  background-color: var(--color-border);
 }
 
-.btn-gold {
+.btn-premium {
   background-color: var(--color-secondary);
-  color: #fff;
+  color: #fff !important;
   padding: var(--space-2) var(--space-4);
   border: none;
   box-shadow: var(--shadow-md);
 }
-.btn-gold:hover {
+.btn-premium:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(212, 175, 55, 0.3);
+  background-color: var(--color-accent);
+  box-shadow: 0 6px 12px rgba(14, 165, 233, 0.3);
 }
 
 .glass-panel {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-glass);
   padding: var(--space-4);
+  color: var(--color-text);
 }
 
-/* Accessibility Focus States */
 *:focus-visible {
-  outline: 3px solid var(--color-secondary);
+  outline: 3px solid var(--color-accent);
   outline-offset: 2px;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
@@ -9,10 +9,20 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 function App() {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
   return (
     <Router>
       <div className="d-flex flex-column min-vh-100">
-        <Navigation />
+        <Navigation theme={theme} toggleTheme={toggleTheme} />
         <FloatingWhatsApp />
         <main className="flex-grow-1">
           <Routes>
