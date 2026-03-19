@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
@@ -12,6 +13,7 @@ function App() {
     <Router>
       <div className="d-flex flex-column min-vh-100">
         <Navigation />
+        <FloatingWhatsApp />
         <main className="flex-grow-1">
           <Routes>
             <Route path="/" element={<Home />} />
